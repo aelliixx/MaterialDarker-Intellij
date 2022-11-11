@@ -1,0 +1,24 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>Material Darker</id>
+    <name>Material Darker</name>
+    <version>1.0.0</version>
+    <vendor email="mockus49@gmail.com" url="https://www.allographic.io">Allographic</vendor>
+    <category>UI</category>
+
+    <description><![CDATA[
+    A darker version of Material theme, created by Allographic</em>
+  ]]></description>
+
+    <change-notes><![CDATA[
+    Initial release of the theme.
+  ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <bundledColorScheme path="/colorSchemes/MaterialDarker" />
+        <themeProvider id="materialdarker" path="/theme/MaterialDarker.theme.json"/>
+    </extensions>
+</idea-plugin>
