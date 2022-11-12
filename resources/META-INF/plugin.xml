@@ -3,7 +3,7 @@
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
     <id>Material Darker</id>
     <name>Material Darker</name>
-    <version>1.0.0</version>
+    <version>1.1.1</version>
     <vendor email="mockus49@gmail.com" url="https://www.allographic.io">Allographic</vendor>
     <category>UI</category>
 
@@ -15,10 +15,13 @@
     Initial release of the theme.
   ]]></change-notes>
 
-    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <bundledColorScheme path="/colorSchemes/MaterialDarker" />
+        <bundledColorScheme path="/colorSchemes/MaterialDarker"/>
+        <themeProvider id="materialdarkerhighcontrast" path="/theme/MaterialDarkerHighContrast.theme.json"/>
+
+        <bundledColorScheme path="/colorSchemes/MaterialDarkerHighContrast"/>
         <themeProvider id="materialdarker" path="/theme/MaterialDarker.theme.json"/>
     </extensions>
 </idea-plugin>
